@@ -4,7 +4,7 @@ from django.core import validators
 def titleCap(s):
     print(s.istitle())
     if s.istitle()==False:
-        validators.ValidationError('Please enter 1st letter of every word in capital')
+        validators.ValidationError(message='Please enter 1st letter of every word in capital')
 
 
 # Create your models here.
